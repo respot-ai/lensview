@@ -27,7 +27,7 @@ export default async function LandingPage() {
         <ul>
           {slugs.map((slug) => (
             <li key={slug}>
-              <Link href={`/${slug}`}>{slug}</Link>
+              <Link href={`/page/${slug}`}>{slug}</Link>
             </li>
           ))}
         </ul>

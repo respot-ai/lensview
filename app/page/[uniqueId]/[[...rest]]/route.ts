@@ -2,13 +2,13 @@ import { NextResponse } from "next/server";
 import { readPage, resolveSlug } from "@/lib/pages";
 
 type RouteContext = {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ uniqueId: string; rest?: string[] }>;
 };
 
 export async function GET(_request: Request, context: RouteContext) {
-  const { slug } = await context.params;
+  const { uniqueId } = await context.params;
 
-  const page = await resolveSlug(slug);
+  const page = await resolveSlug(uniqueId);
   if (!page) {
     return new NextResponse("Not found", { status: 404 });
   }
