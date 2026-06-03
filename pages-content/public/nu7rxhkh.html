@@ -38,91 +38,110 @@
       font-family: var(--font-body);
       line-height: 1.6;
     }
-    .page {
+    .wrap {
       max-width: 1180px;
       margin: 0 auto;
-      padding: 28px 20px 56px;
+      padding: 24px;
     }
     .hero {
-      border: 1px solid var(--mall-goth);
-      background:
-        linear-gradient(135deg, var(--cheeto-fingers) 0 18%, var(--tighty-whitey) 18% 100%);
-      padding: 28px 24px 20px;
-      margin-bottom: 20px;
-    }
-    h1, h2, h3 {
-      margin: 0;
-      font-family: var(--font-heading);
-      font-weight: 400;
-      letter-spacing: 0.02em;
-      line-height: 0.95;
-    }
-    h1 { font-size: 64px; margin-bottom: 8px; }
-    h2 {
-      font-size: 42px;
-      margin-bottom: 14px;
-      padding-bottom: 8px;
-      border-bottom: 1px solid var(--mall-goth);
-    }
-    h3 { font-size: 30px; margin-bottom: 8px; }
-    .subtitle {
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--gray-12);
-    }
-    .summary, .section, .card, .note, table {
-      border: 1px solid var(--mall-goth);
       background: var(--tighty-whitey);
-    }
-    .summary {
-      padding: 16px 18px;
+      border: 1px solid var(--mall-goth);
+      padding: 28px;
       margin-bottom: 20px;
     }
-    .summary strong {
-      display: inline-block;
-      background: var(--cheeto-fingers);
-      padding: 1px 6px;
-    }
-    .section {
-      padding: 18px;
-      margin-bottom: 18px;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 14px;
-    }
-    .col-12 { grid-column: span 12; }
-    .col-6 { grid-column: span 6; }
-    .col-4 { grid-column: span 4; }
-    .card {
-      padding: 16px;
-      height: 100%;
-    }
-    .card.accent { background: var(--gray-2); }
-    .card.secondary { background: var(--facebook-mom); }
     .eyebrow {
+      display: inline-block;
       font-size: 12px;
       font-weight: 700;
       letter-spacing: 0.12em;
       text-transform: uppercase;
-      margin-bottom: 8px;
+      background: var(--facebook-mom);
+      border: 1px solid var(--mall-goth);
+      padding: 6px 10px;
+      margin-bottom: 14px;
     }
-    p { margin: 0 0 10px; }
-    ul {
-      margin: 8px 0 0;
-      padding: 0 18px 0 0;
+    h1, h2, h3 {
+      font-family: var(--font-heading);
+      margin: 0;
+      line-height: .95;
+      font-weight: 400;
     }
-    li { margin-bottom: 6px; }
+    h1 { font-size: 64px; margin-bottom: 10px; }
+    h2 { font-size: 42px; margin-bottom: 16px; }
+    h3 { font-size: 30px; margin-bottom: 10px; }
+    .subtitle {
+      font-size: 14px;
+      color: var(--gray-12);
+      border-top: 1px solid var(--mall-goth);
+      padding-top: 10px;
+    }
+    .summary {
+      background: var(--gray-2);
+      border: 1px solid var(--mall-goth);
+      padding: 18px 20px;
+      margin-bottom: 20px;
+    }
+    .chapter {
+      border: 1px solid var(--mall-goth);
+      margin-bottom: 20px;
+      background: var(--tighty-whitey);
+    }
+    .chapter-head {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 20px;
+      background: var(--cheeto-fingers);
+      border-bottom: 1px solid var(--mall-goth);
+    }
+    .chapter-body {
+      padding: 20px;
+    }
+    .note {
+      background: var(--lemon-snow);
+      border: 1px solid var(--mall-goth);
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+    }
+    .col-12 { grid-column: span 12; }
+    .col-6 { grid-column: span 6; }
+    .card {
+      background: var(--tighty-whitey);
+      border: 1px solid var(--mall-goth);
+      padding: 16px;
+      height: 100%;
+    }
+    .tagrow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 10px 0 14px;
+    }
+    .tag {
+      border: 1px solid var(--mall-goth);
+      padding: 4px 8px;
+      font-size: 12px;
+      font-weight: 700;
+      background: var(--gray-2);
+    }
+    .tag.orange { background: var(--cheeto-fingers); }
+    .tag.blue { background: var(--facebook-mom); }
+    .tag.pink { background: var(--panther); }
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 10px;
+      margin-top: 8px;
       font-size: 14px;
     }
     th, td {
       border: 1px solid var(--mall-goth);
-      padding: 10px 10px;
+      padding: 10px;
       vertical-align: top;
       text-align: right;
     }
@@ -130,263 +149,323 @@
       background: var(--gray-2);
       font-weight: 700;
     }
-    .tag {
-      display: inline-block;
+    ul {
+      margin: 8px 0 0;
+      padding: 0 18px 0 0;
+    }
+    li { margin-bottom: 6px; }
+    .quote {
       border: 1px solid var(--mall-goth);
-      padding: 2px 8px;
-      margin: 0 0 8px 6px;
-      background: var(--cheeto-fingers);
-      font-size: 12px;
-      font-weight: 700;
+      background: var(--gray-2);
+      padding: 12px;
+      margin-top: 10px;
+      font-size: 14px;
     }
+    .insights {
+      margin-top: 16px;
+      background: var(--mall-goth);
+      color: var(--tighty-whitey);
+      border: 1px solid var(--mall-goth);
+      padding: 16px;
+    }
+    .insights h3 { margin-bottom: 12px; }
     .muted { color: #554A49; }
-    .note {
-      padding: 14px 16px;
-      background: var(--lemon-snow);
-      margin-top: 12px;
-    }
+    .small { font-size: 13px; }
     .iconline {
       display: flex;
+      align-items: center;
       gap: 8px;
-      align-items: flex-start;
       margin-bottom: 8px;
+      font-weight: 700;
     }
     .icon {
-      width: 20px; height: 20px; flex: 0 0 20px;
-      margin-top: 2px;
+      width: 18px;
+      height: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 auto;
     }
-    .footer-note {
-      margin-top: 22px;
-      padding-top: 12px;
-      border-top: 1px solid var(--mall-goth);
+    .footer {
+      border: 1px solid var(--mall-goth);
+      padding: 14px 16px;
+      background: var(--gray-2);
       font-size: 12px;
     }
-    @media (max-width: 900px) {
-      .col-6, .col-4 { grid-column: span 12; }
-      h1 { font-size: 52px; }
-      h2 { font-size: 36px; }
+    @media (max-width: 800px) {
+      .col-6, .col-12 { grid-column: span 12; }
+      h1 { font-size: 48px; }
+      h2 { font-size: 34px; }
     }
   </style>
 </head>
 <body>
-  <div class="page">
+  <div class="wrap">
     <header class="hero">
+      <div class="eyebrow">דוח מסודר מתוך הצ׳אט</div>
       <h1>המלצות על תריסים וסורגים</h1>
-      <div class="subtitle">קבוצת רכישה - משתכן 4 | הופק בתאריך 2 ביוני 2026</div>
+      <div class="subtitle">קבוצת רכישה - משתכן 4 | הופק בתאריך 3 ביוני 2026</div>
     </header>
 
     <section class="summary">
       <div class="iconline">
-        <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-          <rect x="3" y="3" width="18" height="18" stroke="var(--mall-goth)" stroke-width="1.5"/>
-          <path d="M7 12h10M7 8h10M7 16h6" stroke="var(--mall-goth)" stroke-width="1.5"/>
-        </svg>
-        <div>
-          <strong>תקציר מנהלים:</strong>
-          מהצ'אט עלו מעט מאוד המלצות קונקרטיות על <b>תריסים ממוגנים / תריס סורג</b>, ולעומת זאת יש יותר מידע על <b>סורגים שקופים</b>. בתחום הסורגים השקופים עלו בעיקר שני ספקים: <b>אל סורג</b> ו-<b>רשת הגנה</b>. בתחום התריסים הממוגנים לא נמצאה בצ'אט המלצה מפורשת על "תריס סורג" או "תריסים ממוגנים"; נמצאו רק אזכורים כלליים לספק שמבצע <b>תריס חשמלי</b> ולעבודה מול <b>מס רכוש</b> לנפגעי מלחמה.
+        <span class="icon">🔎</span>
+        <span>סיכום מנהלים קצר</span>
+      </div>
+      <div>
+        מתוך הודעות הצ׳אט נמצאו הרבה יותר פרטים על <strong>סורגים שקופים</strong> מאשר על <strong>תריסים ממוגנים / תריס סורג</strong>.
+        לגבי תריסים ממוגנים לא נמצאה בצ׳אט המלצה ישירה, מפרט או השוואה מפורשת למוצר כזה; כן נמצא אזכור כללי ל<strong>תריס חשמלי</strong> אצל ספק אלומיניום וזכוכית, ואזכורים כלליים לכך שספק מסוים עובד גם עם זכוכיות, תריסים וחלונות.
+        לעומת זאת, לגבי סורגים שקופים נמצאו שני ספקים/פתרונות מרכזיים: <strong>אל סורג</strong> ו<strong>רשת הגנה</strong>, עם מידע על מחיר, אחריות, חומרי גלם, שימושים נלווים ואזורי שירות.
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="chapter-head">
+        <h2>תריסים ממוגנים</h2>
+        <div class="tagrow">
+          <span class="tag orange">מעט מידע בצ׳אט</span>
+          <span class="tag blue">ללא השוואה ישירה</span>
+        </div>
+      </div>
+      <div class="chapter-body">
+        <div class="note">
+          בצ׳אט <strong>לא נמצאה התייחסות מפורשת ל״תריס סורג״ או ״תריסים ממוגנים״</strong>. לכן הפרק הזה מבוסס רק על אזכורים חלקיים ורלוונטיים-בקירוב, בלי להרחיב מעבר למה שנכתב.
+        </div>
+
+        <div class="grid">
+          <div class="col-6">
+            <div class="card">
+              <h3>א.ד אלומיניום וזכוכית</h3>
+              <div class="tagrow">
+                <span class="tag orange">הוזכר תריס חשמלי</span>
+                <span class="tag blue">מחירים בהטבה</span>
+              </div>
+              <ul>
+                <li>הספק הוצג כמה פעמים בקבוצה כספק פעיל של הקבוצה.</li>
+                <li>נכתב על דור ואליאב: <strong>״הם אנשים מדהימים״</strong>.</li>
+                <li>נכתב גם: <strong>״כבר 3 שנים שיש לנו שיתוף פעולה מוצלח עם 100% לקוחות מרוצים״</strong>.</li>
+                <li>ברשימת המוצרים שלהם הופיע <strong>״תריס חשמלי״</strong>, לצד מראות, רשתות, סגירת מרפסת וחיפוי זכוכית.</li>
+                <li>נכתב כי <strong>המחירים המפורטים בהטבה בלעדיים לקבוצת משתכן</strong>, אך בצ׳אט עצמו לא הופיעו מספרים.</li>
+                <li>באזכורים מוקדמים יותר נכתב גם כי החברה <strong>עובדת מול מס רכוש לנפגעי טילים/הדף</strong>, וניתן לקבל דרכה זכוכיות, תריסים, חלונות ועוד.</li>
+              </ul>
+              <div class="quote">
+                מה בדיוק נאמר: „הם אנשים מדהימים… כבר 3 שנים שיש לנו שיתוף פעולה מוצלח עם 100% לקוחות מרוצים.”
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card">
+              <h3>מה חסר בצ׳אט בנושא הזה</h3>
+              <div class="tagrow">
+                <span class="tag pink">אין מחיר</span>
+                <span class="tag pink">אין מפרט</span>
+                <span class="tag pink">אין ניסיון אישי מפורט</span>
+              </div>
+              <ul>
+                <li>לא נמצא ספק שהומלץ במפורש על <strong>תריס סורג / תריס ממוגן</strong>.</li>
+                <li>לא נמצאו <strong>מחירים או טווחי מחיר</strong> למוצר כזה.</li>
+                <li>לא נמצאו פרטים על <strong>מפרט, איכות, מנגנון, עובי, חומר, תקן או אחריות</strong> עבור תריס ממוגן.</li>
+                <li>לא נמצאו <strong>חסרונות, אזהרות או השוואות</strong> בין כמה פתרונות של תריס ממוגן.</li>
+                <li>לא נמצא <strong>ניסיון אישי של דייר/ת</strong> שביצע/ה התקנה של תריס ממוגן וסיפר/ה על התוצאה.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card">
+              <h3>יתרונות, חסרונות והסתייגויות שעלו בפועל</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>נושא</th>
+                    <th>מה עלה בצ׳אט</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>יתרונות</td>
+                    <td>לגבי א.ד אלומיניום וזכוכית עלו שבחים כלליים על השירות והאמינות, אך לא ספציפית על תריס ממוגן.</td>
+                  </tr>
+                  <tr>
+                    <td>חסרונות</td>
+                    <td>לא הוזכרו חסרונות ספציפיים.</td>
+                  </tr>
+                  <tr>
+                    <td>אזהרות / הסתייגויות</td>
+                    <td>ההסתייגות המרכזית היא מחסור במידע: אי אפשר להסיק מהצ׳אט המלצה מבוססת על תריס ממוגן עצמו.</td>
+                  </tr>
+                  <tr>
+                    <td>השוואות</td>
+                    <td>לא נמצאה השוואה בין תריס ממוגן לבין פתרונות אחרים.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div class="insights">
+          <h3>תובנות מסכמות והמלצות פרקטיות להמשך בירור</h3>
+          <ul>
+            <li>מהצ׳אט בלבד, אי אפשר לבנות המלצה חזקה על תריס ממוגן; יש רק אינדיקציה ש<strong>א.ד אלומיניום וזכוכית</strong> עוסקים גם בתריסים.</li>
+            <li>הצעד הפרקטי הבא לפי המידע בצ׳אט: לפנות ל<strong>א.ד אלומיניום וזכוכית</strong> ולבקש במפורש הצעת מחיר עבור <strong>תריס ממוגן / תריס סורג</strong>, כולל מפרט ואחריות.</li>
+            <li>כדאי לבקש מהם בכתב: סוג המוצר, חומרי גלם, אחריות, מנגנון, התאמה לממ״ד/חלונות/ויטרינה, וזמן אספקה — כי כל אלו <strong>לא הופיעו בצ׳אט</strong>.</li>
+            <li>כדאי גם לבדוק אם הזום שפורסם בקבוצה בנושא <strong>מקלחונים, אלומיניום וזכוכית</strong> כלל בהמשך מידע רלוונטי, אבל הוא לא הופיע בחומר שנמצא כאן.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>תריסים ממוגנים</h2>
+    <section class="chapter">
+      <div class="chapter-head">
+        <h2>סורגים שקופים</h2>
+        <div class="tagrow">
+          <span class="tag orange">2 פתרונות מרכזיים</span>
+          <span class="tag blue">יש מחיר ואחריות</span>
+        </div>
+      </div>
+      <div class="chapter-body">
+        <div class="grid">
+          <div class="col-6">
+            <div class="card">
+              <h3>אל סורג</h3>
+              <div class="tagrow">
+                <span class="tag orange">מומלץ בקבוצה</span>
+                <span class="tag blue">35+ שנות ניסיון</span>
+                <span class="tag pink">מחיר לא צוין בהודעה</span>
+              </div>
+              <ul>
+                <li>הוצגה בקבוצה כמה פעמים כספק של <strong>סורגים שקופים</strong>.</li>
+                <li>נכתב: <strong>״אל סורג היא המפתחת הבלעדית של הסורג השקוף״</strong>.</li>
+                <li>נכתב: <strong>״עם ניסיון מעל 35 שנים, איכות ובטיחות בלתי מתפשרת״</strong>.</li>
+                <li>מעבר לסורגים שקופים, הוזכרו גם: <strong>הגבהת מעקה, רשתות נגד יתושים, מיגון לויטרינות נגד פריצה, סגירת מרפסת עם זכוכיות נאספות</strong>.</li>
+                <li>נכתב כי <strong>המחירים כתובים בהצעה ובלעדיים לקבוצת משתכן</strong>, אך המספרים עצמם לא הופיעו בגוף ההודעות.</li>
+                <li>מתנה שצוינה: <strong>ציפוי מיגון שקוף נגד רסיסים לחלון הממ״ד</strong>.</li>
+                <li>אזור שירות: <strong>חיפה והקריות עד באר שבע, בתחומי הקו הירוק בלבד</strong>.</li>
+              </ul>
+              <div class="quote">
+                מה בדיוק נאמר: „אל סורג היא המפתחת הבלעדית של הסורג השקוף... עם ניסיון מעל 35 שנים, איכות ובטיחות בלתי מתפשרת.”
+              </div>
+            </div>
+          </div>
 
-      <div class="grid">
-        <div class="col-12">
-          <div class="card accent">
-            <div class="eyebrow">מה נמצא בפועל בצ'אט</div>
-            <p>לא נמצאה בצ'אט המלצה מפורשת או דיון מפורט על <b>תריסים ממוגנים / תריס סורג</b>. גם חיפושים ייעודיים על הביטויים "תריס סורג", "תריסים ממוגנים" ו"ממוגן" לא העלו תוצאות רלוונטיות.</p>
-            <p>כן נמצאו אזכורים חלקיים בלבד לספק אחד שמבצע <b>תריס חשמלי</b>, אך ללא פירוט שמוכיח שמדובר בתריס ממוגן.</p>
+          <div class="col-6">
+            <div class="card">
+              <h3>רשת הגנה</h3>
+              <div class="tagrow">
+                <span class="tag orange">מחיר מפורש</span>
+                <span class="tag blue">10 שנות אחריות</span>
+                <span class="tag blue">נירוסטה 316</span>
+              </div>
+              <ul>
+                <li>הוצגה כפתרון למי שרוצה <strong>הגנה מנפילה בלי לחסום נוף ואוויר</strong>.</li>
+                <li>בניסוח מוקדם יותר נכתב: <strong>״מוצר מצוין למי שרוצה הגנה מנפילה אך לא מעוניין שבסורגים שקופים״</strong> — כלומר המיצוב הוא כפתרון שקוף/עדין יותר לעומת תחושת סורג רגיל.</li>
+                <li>נכתב שהחברה <strong>מפתחת ומייצרת פתרונות מתקדמים ייחודיים לענף הבנייה</strong>, ובהודעה מאוחרת יותר: <strong>מיוצרים בישראל ומוגנים בפטנט</strong>.</li>
+                <li>מחיר שצוין בפברואר–אפריל: <strong>690 ₪ למ״ר</strong>.</li>
+                <li>מחיר שצוין ביוני: <strong>730 ₪ למ״ר</strong>.</li>
+                <li>בשני הנוסחים נכתב שהמחיר <strong>כולל מע״מ, התקנה ו-10 שנות אחריות</strong>.</li>
+                <li>מפרט/איכות: <strong>נירוסטה 316</strong>, <strong>מסגרת אלומיניום איכותית/עמידה</strong>, <strong>מערכת נעילה להגנה מקסימלית מתאונות נפילה</strong>.</li>
+                <li>בהודעה המאוחרת נכתב גם: <strong>עבר בהצלחה בדיקות עומס של מכון התקנים</strong>.</li>
+              </ul>
+              <div class="quote">
+                מה בדיוק נאמר: „המחיר כולל מע״מ, התקנה ו-10 שנות אחריות... נירוסטה 316... עבר בהצלחה בדיקות עומס של מכון התקנים.”
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <div class="card">
+              <h3>השוואה בין האפשרויות שעלו בצ׳אט</h3>
+              <table>
+                <thead>
+                  <tr>
+                    <th>קריטריון</th>
+                    <th>אל סורג</th>
+                    <th>רשת הגנה</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>מה נאמר על הספק</td>
+                    <td>״המפתחת הבלעדית של הסורג השקוף״; מעל 35 שנות ניסיון; איכות ובטיחות בלתי מתפשרת</td>
+                    <td>פתרון בטיחות מתקדם; מיוצר בישראל; מוגן בפטנט; מוצג כפתרון שמגן מנפילה בלי לחסום נוף ואוויר</td>
+                  </tr>
+                  <tr>
+                    <td>מחיר</td>
+                    <td>לא צוין מספר בהודעות; רק שנכתב שהמחירים מופיעים בהצעה ובלעדיים לקבוצה</td>
+                    <td>690 ₪ למ״ר בהודעות מוקדמות; 730 ₪ למ״ר בהודעה מאוחרת</td>
+                  </tr>
+                  <tr>
+                    <td>מה כלול במחיר</td>
+                    <td>לא פורט בצ׳אט</td>
+                    <td>מע״מ, התקנה, 10 שנות אחריות</td>
+                  </tr>
+                  <tr>
+                    <td>מפרט / איכות</td>
+                    <td>אין מפרט טכני מפורט מעבר לדגש כללי על איכות ובטיחות</td>
+                    <td>נירוסטה 316, מסגרת אלומיניום, מערכת נעילה; צוין גם שעבר בדיקות עומס של מכון התקנים</td>
+                  </tr>
+                  <tr>
+                    <td>שירותים נלווים</td>
+                    <td>הגבהת מעקה, רשתות, מיגון לויטרינות, סגירת מרפסת עם זכוכיות נאספות</td>
+                    <td>הודעות התמקדו בעיקר במוצר הסורג/רשת ההגנה</td>
+                  </tr>
+                  <tr>
+                    <td>מתנות / בונוסים</td>
+                    <td>ציפוי מיגון שקוף נגד רסיסים לחלון הממ״ד</td>
+                    <td>לא צוין בונוס נוסף</td>
+                  </tr>
+                  <tr>
+                    <td>אזור שירות</td>
+                    <td>חיפה והקריות עד באר שבע, בתחומי הקו הירוק בלבד</td>
+                    <td>לא צוין בהודעות שאותרו</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card">
+              <h3>יתרונות וחסרונות שעלו</h3>
+              <ul>
+                <li><strong>יתרונות של אל סורג:</strong> ותק גבוה, מיתוג כמפתחת הבלעדית, היצע רחב של פתרונות נלווים, בונוס לממ״ד.</li>
+                <li><strong>חסרונות / פערי מידע של אל סורג:</strong> אין מחיר גלוי בהודעות, אין פירוט אחריות, אין מפרט חומרי גלם מפורש.</li>
+                <li><strong>יתרונות של רשת הגנה:</strong> מחיר גלוי, כולל התקנה ומע״מ, 10 שנות אחריות, מפרט ברור, בדיקות עומס של מכון התקנים, דגש על נוף ואוויר.</li>
+                <li><strong>חסרונות / פערי מידע של רשת הגנה:</strong> פחות מידע על אזור שירות ועל שירותים נלווים; יש פער מחיר בין פרסומים שונים (690 לעומת 730 ₪ למ״ר).</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-6">
+            <div class="card">
+              <h3>אזהרות והסתייגויות</h3>
+              <ul>
+                <li>המחיר של <strong>רשת הגנה</strong> השתנה בין הודעות שונות: 690 ₪ למ״ר לעומת 730 ₪ למ״ר. לא מוסבר בצ׳אט למה.</li>
+                <li>אצל <strong>אל סורג</strong> המחיר לא מופיע בהודעות עצמן, ולכן אי אפשר להשוות עלות ישירה בלי לפתוח את ההצעה.</li>
+                <li>יש פנייה של משתתף/ת בקבוצה: <strong>״יש המלצה כאן לסורגים שקופים והגבהת זגוגיות מרפסת? לא ראיתי בדרייב״</strong> — כלומר לפחות במועד ההודעה היה קושי לאתר את המידע בדרייב.</li>
+                <li>לא נמצאו בצ׳אט חוות דעת אישיות מפורטות של דיירים שביצעו בפועל התקנה אצל אחד משני הספקים וסיפרו על התוצאה.</li>
+              </ul>
+            </div>
           </div>
         </div>
 
-        <div class="col-6">
-          <div class="card">
-            <h3>א.ד אלומיניום וזכוכית</h3>
-            <span class="tag">הוזכר בצ'אט</span>
-            <ul>
-              <li>נכתב שהספק מציע בין היתר: <b>תריס חשמלי</b>.</li>
-              <li>על הספק נאמר: <b>"דור ואליאב הם אנשים מדהימים"</b>.</li>
-              <li>נכתב גם: <b>"כבר 3 שנים שיש לנו שיתוף פעולה מוצלח עם 100% לקוחות מרוצים"</b>.</li>
-              <li>בכמה הודעות צוין שהחברה <b>עובדת מול מס רכוש</b> לנפגעי טילים/הדף, וניתן לקבל דרכה <b>זכוכיות, תריסים, חלונות ועוד</b>.</li>
-              <li><b>לא נמסרו מחירים</b> לתריסים.</li>
-              <li><b>לא נמסרו מפרט, איכות חומר, אחריות או תיאור התקנה</b> עבור תריסים.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-6">
-          <div class="card secondary">
-            <h3>חסר מידע מהותי</h3>
-            <span class="tag">הסתייגות</span>
-            <ul>
-              <li>אין בצ'אט השוואה בין תריס ממוגן לבין חלופות אחרות.</li>
-              <li>אין חוות דעת של דייר/ת שביצע/ה בפועל תריס ממוגן.</li>
-              <li>אין טווחי מחירים, מידות, תקנים, אחריות או פירוט מנגנוני מיגון.</li>
-              <li>אין אזהרות מקצועיות ספציפיות לתריס סורג.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <table>
-            <thead>
-              <tr>
-                <th>ספק / בעל מקצוע</th>
-                <th>מה בדיוק נאמר</th>
-                <th>יתרונות שעלו</th>
-                <th>חסרונות / פערי מידע</th>
-                <th>מחיר / אחריות / התקנה</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>א.ד אלומיניום וזכוכית</td>
-                <td>מציעים גם תריס חשמלי; עובדים מול מס רכוש לנפגעי טילים/הדף ויכולים לספק תריסים, חלונות וזכוכיות</td>
-                <td>תיאור חיובי מאוד של בעלי המקצוע; "100% לקוחות מרוצים" לפי הודעות הקבוצה; רלוונטי למי שצריך פתרון דרך מס רכוש</td>
-                <td>לא ברור אם מדובר בתריס ממוגן/תריס סורג; אין ניסיון אישי מפורט של חברי קבוצה בנושא הזה</td>
-                <td>לא צוינו מחירים, אחריות, מפרט או תנאי התקנה</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-12">
-          <div class="note">
-            <b>תובנות והמלצות פרקטיות להמשך בירור:</b>
-            <ul>
-              <li>אם המטרה היא דווקא <b>תריס סורג / תריס ממוגן</b>, צריך לבקש מהספקים הבהרה מפורשת כי בצ'אט זה לא נכתב.</li>
-              <li>כדאי לשאול כל ספק על: סוג המיגון, חומר הגלם, עמידה בתקנים, אפשרות נעילה, אחריות, והאם מדובר בפתרון נגד פריצה או רק בתריס חשמלי רגיל.</li>
-              <li>במקרה של נזקי מלחמה/הדף, א.ד רלוונטיים לבירור ראשוני כי נכתב במפורש שהם עובדים מול מס רכוש.</li>
-              <li>מאחר שאין בצ'אט השוואות או מחירים, כדאי לאסוף לפחות שתי הצעות מחיר כתובות לפני החלטה.</li>
-            </ul>
-          </div>
+        <div class="insights">
+          <h3>תובנות מסכמות והמלצות פרקטיות להמשך בירור</h3>
+          <ul>
+            <li>למי שמחפש <strong>השוואה מבוססת מחיר ומפרט</strong>, בצ׳אט עצמו ל<strong>רשת הגנה</strong> יש יותר מידע קונקרטי: מחיר למ״ר, מה כלול, חומרי גלם, אחריות ובדיקות עומס.</li>
+            <li>למי שמחפש <strong>ספק ותיק עם מעטפת רחבה יותר</strong> סביב מרפסת/מעקה/ויטרינה, <strong>אל סורג</strong> מוצגת כפתרון רחב יותר, אך בלי מחיר גלוי בהודעות.</li>
+            <li>כדאי בבירור הבא לבקש משני הספקים בדיוק את אותם נתונים: מחיר למ״ר, מה כלול, אחריות, סוג המסגרת, סוג החומר, אופן העיגון, זמן אספקה, והאם יש בדיקות תקן/עומס.</li>
+            <li>בגלל פער המחיר שעלה אצל רשת הגנה, חשוב לבקש <strong>הצעת מחיר מעודכנת בכתב</strong> ולא להסתמך על אחת ההודעות ההיסטוריות בלבד.</li>
+            <li>אם רלוונטי גם <strong>הגבהת מעקה או סגירת מרפסת</strong>, יש יתרון לבדוק קודם את <strong>אל סורג</strong>, כי אלו הוזכרו אצלה במפורש כחלק ממכלול השירותים.</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2>סורגים שקופים</h2>
-
-      <div class="grid">
-        <div class="col-4">
-          <div class="card accent">
-            <h3>אל סורג</h3>
-            <span class="tag">ספק מומלץ בקבוצה</span>
-            <ul>
-              <li>הוגדרה כ-<b>"המפתחת הבלעדית של הסורג השקוף"</b>.</li>
-              <li>נכתב שיש לה <b>ניסיון מעל 35 שנים</b>.</li>
-              <li>תיאור איכותי: <b>"איכות ובטיחות בלתי מתפשרת"</b>.</li>
-              <li>מוצרים שנכללים בהטבה: <b>סורגים שקופים, הגבהת מעקה, רשתות נגד יתושים, מיגון לויטרינות נגד פריצה, סגירת מרפסת עם זכוכיות נאספות</b>.</li>
-              <li>מתנה שצוינה: <b>ציפוי מיגון שקוף נגד רסיסים לחלון הממ"ד</b>.</li>
-              <li>אזור שירות: <b>חיפה והקריות עד באר שבע, בתחומי הקו הירוק בלבד</b>.</li>
-              <li><b>המחירים כתובים בהצעה</b>, אך לא הופיעו בגוף ההודעות.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card">
-            <h3>רשת הגנה</h3>
-            <span class="tag">חלופה שעלתה בצ'אט</span>
-            <ul>
-              <li>תוארה כ-<b>"השקוף שבסורגים"</b>.</li>
-              <li>נכתב שזה <b>"מוצר מצוין למי שרוצה הגנה מנפילה אך לא מעוניין שבסורגים שקופים"</b> — כלומר מוצג כחלופה למראה/קונספט של סורג שקוף קלאסי.</li>
-              <li>החברה מפתחת ומייצרת: <b>סורגים, סורגים שקופים, רשתות הזזה ורשת גלילה</b>.</li>
-              <li>מחיר שצוין: <b>690 ש"ח למ"ר</b>.</li>
-              <li>העלויות <b>כוללות מע"מ, התקנה ואחריות ל-10 שנים</b>.</li>
-              <li>מפרט שצוין: <b>מערכת נעילה להגנה מקסימלית מתאונות נפילה, נירוסטה 316, ומסגרת אלומיניום איכותית ועמידה</b>.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card secondary">
-            <h3>אזכורים ושאלות מהקבוצה</h3>
-            <span class="tag">ביקוש קיים</span>
-            <ul>
-              <li>דניאל אדה שאל/ה: <b>"יש המלצה כאן לסורגים שקופים והגבהת זגוגיות מרפסת? לא ראיתי בדרייב"</b>.</li>
-              <li>הדבר מחזק שהיה צורך אמיתי בנושא, וגם מצביע על כך שלא כל המידע היה קל לאיתור בדרייב באותו שלב.</li>
-              <li>לא נמצאה בצ'אט חוות דעת מפורטת של דייר/ת שביצע/ה בפועל אצל אחד מהספקים האלה.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <table>
-            <thead>
-              <tr>
-                <th>ספק</th>
-                <th>מה בדיוק נאמר</th>
-                <th>יתרונות</th>
-                <th>חסרונות / הסתייגויות</th>
-                <th>מחיר / אחריות / מפרט</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>אל סורג</td>
-                <td>המפתחת הבלעדית של הסורג השקוף; מעל 35 שנות ניסיון; איכות ובטיחות בלתי מתפשרת</td>
-                <td>מבחר פתרונות משיקים: הגבהת מעקה, מיגון לויטרינות, סגירת מרפסת; מתנה לממ"ד; פריסה רחבה יחסית</td>
-                <td>אין מחיר מספרי בהודעות; אין פירוט על אחריות; אין חוות דעת אישית מפורטת של דייר מהקבוצה</td>
-                <td>מחירים קיימים רק בהצעה; מתנה: ציפוי מיגון שקוף נגד רסיסים לחלון ממ"ד</td>
-              </tr>
-              <tr>
-                <td>רשת הגנה</td>
-                <td>מוצר מצוין למי שרוצה הגנה מנפילה אך לא מעוניין בסורגים שקופים; מוצג כפתרון מתקדם לענף הבנייה</td>
-                <td>מחיר ברור; כולל מע"מ, התקנה ואחריות; מפרט חומרים יחסית מפורט; דגש על בטיחות מפני נפילה</td>
-                <td>הניסוח מרמז שזה לא בדיוק אותו פתרון עבור מי שמחפש מראה של סורג שקוף קלאסי; לא נמסר אזור שירות בהודעה שנמצאה</td>
-                <td>690 ש"ח למ"ר; 10 שנות אחריות; נירוסטה 316; מסגרת אלומיניום; מערכת נעילה</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-
-        <div class="col-6">
-          <div class="card">
-            <h3>השוואה שעלתה מתוך הניסוחים</h3>
-            <ul>
-              <li><b>אל סורג</b> הוצגה כמותג הייעודי של "הסורג השקוף".</li>
-              <li><b>רשת הגנה</b> הוצגה כפתרון למי שרוצה <b>הגנה מנפילה</b> אבל <b>לא מעוניין בסורגים שקופים</b>.</li>
-              <li>כלומר, לפי לשון ההודעות:
-                <ul>
-                  <li>אל סורג = פתרון קלאסי/ישיר של סורג שקוף.</li>
-                  <li>רשת הגנה = חלופה בטיחותית, עם דגש פונקציונלי ומפרט טכני ברור יותר.</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-6">
-          <div class="card accent">
-            <h3>אזהרות והסתייגויות</h3>
-            <ul>
-              <li>למרות הטון החיובי, רוב המידע מגיע מהודעות הקבוצה/הספקים ולא מביקורות משתמשים מפורטות.</li>
-              <li>רק אצל רשת הגנה מופיע <b>מחיר מפורש</b> בגוף ההודעות.</li>
-              <li>אצל אל סורג אין בגוף ההודעות פירוט על <b>אחריות, חומרי גלם או מחיר מספרי</b>.</li>
-              <li>אצל אל סורג יש מגבלת שירות: <b>בתחומי הקו הירוק בלבד</b>.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-12">
-          <div class="note">
-            <b>תובנות והמלצות פרקטיות להמשך בירור:</b>
-            <ul>
-              <li>אם מחפשים דווקא <b>סורג שקוף קלאסי</b>, אל סורג היא ההמלצה הישירה ביותר שעלתה בצ'אט.</li>
-              <li>אם חשוב לקבל מראש <b>מחיר ברור, אחריות ארוכה ומפרט טכני</b>, רשת הגנה היא האפשרות עם הכי הרבה נתונים קונקרטיים בהודעות.</li>
-              <li>כדאי לבקש משני הספקים הצעת מחיר על אותה פתיחה/אותו חלון כדי להשוות תפוח לתפוח.</li>
-              <li>מומלץ לשאול באופן ממוקד על: שקיפות/נראות, רמת בטיחות מנפילה, עמידות חומרים, תנאי אחריות, שיטת נעילה, והאם המחיר כולל מדידה והתקנה.</li>
-              <li>למי שצריך גם <b>הגבהת מעקה</b> או פתרונות משלימים למרפסת, אל סורג הוזכרה במפורש גם בהקשרים האלה.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="footer-note muted">
-      המסמך מבוסס רק על הודעות שנמצאו בצ'אט. במקומות שבהם לא הופיע מידע מפורש — צוין שחסר מידע, ללא השלמה או ניחוש.
+    <div class="footer">
+      המסמך מבוסס רק על הודעות שאותרו בצ׳אט בנושא תריסים, סורגים, סורג שקוף וסורגים שקופים. כאשר לא הופיע מידע מפורש — צוין שחסר מידע, ולא הושלם ממקורות חיצוניים.
     </div>
   </div>
 </body>
