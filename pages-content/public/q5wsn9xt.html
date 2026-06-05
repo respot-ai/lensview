@@ -1,0 +1,327 @@
+<!doctype html>
+<html dir="rtl" lang="he">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>סיכום הודעות מהיום</title>
+  <link href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* Primary */
+      --mall-goth: #302A23;
+      --tighty-whitey: #FDF8F3;
+      --cheeto-fingers: #FFA748;
+
+      /* Secondary */
+      --lemon-snow: #FFFBD4;
+      --facebook-mom: #AFC2D8;
+      --panther: #F0C6CA;
+      --my-swamp: #A3B252;
+      --jorts: #4C5F76;
+      --kevins-chili: #7C4933;
+
+      /* Grayscale */
+      --gray-2: #EAE5E0;
+      --gray-3: #D8D3CD;
+      --gray-12: #302A23;
+
+      /* Typography */
+      --font-heading: 'League Gothic', sans-serif;
+      --font-body: 'Manrope', sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--tighty-whitey);
+      color: var(--mall-goth);
+      font-family: var(--font-body);
+      line-height: 1.6;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      background: var(--gray-2);
+      border: 1px solid var(--mall-goth);
+      padding: 28px;
+      margin-bottom: 20px;
+    }
+
+    .eyebrow {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      margin-bottom: 10px;
+      padding: 4px 8px;
+      background: var(--facebook-mom);
+      border: 1px solid var(--mall-goth);
+    }
+
+    h1 {
+      margin: 0;
+      font-family: var(--font-heading);
+      font-size: 64px;
+      line-height: 0.95;
+      font-weight: 400;
+    }
+
+    .subtitle {
+      margin-top: 8px;
+      font-size: 14px;
+      color: var(--gray-12);
+    }
+
+    .summary {
+      margin-top: 18px;
+      background: var(--cheeto-fingers);
+      border: 1px solid var(--mall-goth);
+      padding: 16px 18px;
+      font-weight: 600;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--tighty-whitey);
+      border: 1px solid var(--mall-goth);
+      padding: 18px;
+      min-height: 100%;
+    }
+
+    .card h2 {
+      margin: 0 0 12px;
+      font-family: var(--font-heading);
+      font-size: 34px;
+      line-height: 1;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .col-6 { grid-column: span 6; }
+    .col-12 { grid-column: span 12; }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      margin: 0 0 10px;
+      padding: 0 0 10px;
+      border-bottom: 1px solid var(--gray-3);
+    }
+
+    li:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .topic {
+      font-weight: 700;
+    }
+
+    .muted {
+      color: #554A49;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 2px 8px;
+      border: 1px solid var(--mall-goth);
+      background: var(--lemon-snow);
+      font-size: 12px;
+      font-weight: 700;
+      margin-inline-start: 6px;
+    }
+
+    .owner {
+      font-weight: 700;
+      color: var(--mall-goth);
+    }
+
+    .icon {
+      width: 18px;
+      height: 18px;
+      flex: 0 0 18px;
+    }
+
+    .footer-note {
+      margin-top: 16px;
+      font-size: 12px;
+      color: #554A49;
+    }
+
+    @media (max-width: 800px) {
+      .grid { grid-template-columns: 1fr; }
+      .col-6, .col-12 { grid-column: span 1; }
+      h1 { font-size: 48px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="hero">
+      <div class="eyebrow">דוח יומי</div>
+      <h1>סיכום הודעות מהיום</h1>
+      <div class="subtitle">קבוצת יעלוש · 05 ביוני 2026</div>
+      <div class="summary">
+        עיקר השיח היום התמקד בליקויים ובדיווחי אחריות בדירה החדשה, בבירור סטטוס אישור מהנדס/דיווח לעירייה עבור הפרגולה, ובאיסוף מידע מעשי לרכישת צבע ומאווררים. עלתה גם בקשה מפורשת לסיוע במעבר על דוחות המסירה והבדק כדי לוודא שכל הליקויים יתועדו ויטופלו.
+      </div>
+    </header>
+
+    <main class="grid">
+      <section class="card col-6">
+        <h2>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M3 6h18v12H3z" stroke="var(--mall-goth)" stroke-width="1.5"/>
+            <path d="M7 10h10M7 14h7" stroke="var(--mall-goth)" stroke-width="1.5"/>
+          </svg>
+          נושאים מרכזיים
+        </h2>
+        <ul>
+          <li>
+            <span class="topic">ליקויים בדירה ותיעוד אחריות:</span>
+            הודגש הצורך לעבור מסודר על דוח המסירה מול דוח הבדק, במיוחד סביב שריטות, רובה, וגימור לא איכותי, כדי למנוע פספוס של פריטים שלא טופלו.
+          </li>
+          <li>
+            <span class="topic">פרגולה, אישור מהנדס ורישום לעירייה:</span>
+            נבדק האם נדרש להצטרף להסדרה קבוצתית מול מהנדס; לפי המידע שנאסף, יש כנראה כבר אישור מהנדס לפרגולה, והצורך המרכזי הוא בדיווח בזמן לעירייה.
+          </li>
+          <li>
+            <span class="topic">רכש והצטיידות לבית:</span>
+            נאסף מידע על חנויות לצבע לבית והועלו המלצות ראשוניות לגבי מאווררים המתאימים לתקרות גבוהות.
+          </li>
+          <li>
+            <span class="topic">תמיכה תפעולית מול שכנים/ספקים:</span>
+            שותף איש קשר של שכנה לגבי מדידת המחסן, לטובת המשך טיפול נקודתי.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card col-6">
+        <h2>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M4 12l5 5L20 6" stroke="var(--mall-goth)" stroke-width="2"/>
+          </svg>
+          החלטות שהתקבלו
+        </h2>
+        <ul>
+          <li>
+            הוחלט <span class="topic">לא להצטרף</span> כרגע למסלול הקבוצתי לרישום/מהנדס לפרגולה, מתוך הבנה שהאישור כבר קיים ושנדרש בעיקר לבצע דיווח לעירייה.
+          </li>
+          <li>
+            הובהר שהגישה הרצויה היא <span class="topic">לדווח בזמן ולא בדיעבד</span>, כדי להימנע מקנסות ובעיות עתידיות.
+          </li>
+          <li>
+            סוכם מעשית שיש צורך <span class="topic">להשלים מיפוי פערים</span> בין דוח המסירה לדוח הבדק לפני המשך טיפול מול הגורמים המבצעים.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card col-6">
+        <h2>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M5 4h14v16H5z" stroke="var(--mall-goth)" stroke-width="1.5"/>
+            <path d="M8 8h8M8 12h8M8 16h5" stroke="var(--mall-goth)" stroke-width="1.5"/>
+          </svg>
+          משימות ופעולות להמשך
+        </h2>
+        <ul>
+          <li>
+            <span class="topic">מעבר על דוחות מסירה ובדק</span>
+            <span class="pill">בעלים: יעל, נדרש סיוע של עומר</span><br>
+            לזהות אילו ליקויים מופיעים בדוח הבדק אך לא בדוח המסירה, ולהכין רשימה מרוכזת להשלמה מול ירדן/הגורם המטפל.
+          </li>
+          <li>
+            <span class="topic">פנייה להוספת ליקויים חסרים</span>
+            <span class="pill">בעלים: יעל</span><br>
+            לבקש להוסיף לדוח המסירה את כלל הסריטות והליקויים שלא הוזנו, כדי שלא יישארו מחוץ לאחריות.
+          </li>
+          <li>
+            <span class="topic">וידוא סטטוס הפרגולה מול אליק/הגורם הרלוונטי</span>
+            <span class="pill">בעלים: עומר/יעל</span><br>
+            לוודא שאישור המהנדס אכן קיים ונגיש, ובהמשך לבצע את הדיווח לעירייה אם טרם בוצע.
+          </li>
+          <li>
+            <span class="topic">בדיקת אפשרויות לרכישת צבע ומאווררים</span>
+            <span class="pill">בעלים: פתוח</span><br>
+            להמשיך השוואת אפשרויות מול הום סנטר, שקם אלקטריק, KSP, מחסני תאורה וספקים נוספים.
+          </li>
+          <li>
+            <span class="topic">שימוש בפרטי הקשר של השכנה למדידת המחסן</span>
+            <span class="pill">בעלים: פתוח</span><br>
+            ליצור קשר לפי הצורך להמשך תיאום בנושא המחסן.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card col-6">
+        <h2>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <path d="M12 3l9 16H3L12 3z" stroke="var(--mall-goth)" stroke-width="1.5"/>
+            <path d="M12 9v4M12 16h.01" stroke="var(--mall-goth)" stroke-width="1.5"/>
+          </svg>
+          חסמים או נושאים פתוחים
+        </h2>
+        <ul>
+          <li>
+            עדיין <span class="topic">לא בוצע מעבר מסודר</span> על כלל הליקויים מול המסמכים, וקיים חשש שליקויים לא ידווחו בזמן.
+          </li>
+          <li>
+            קיים <span class="topic">עומס וקושי להתרכז</span>, שעלו כמחסום ממשי להתקדמות בטיפול התיעודי והבירוקרטי.
+          </li>
+          <li>
+            סטטוס <span class="topic">הדיווח בפועל לעירייה</span> לגבי הפרגולה נשאר פתוח, גם אם נדמה שאישור המהנדס כבר הושג.
+          </li>
+          <li>
+            לא נסגרה עדיין <span class="topic">החלטת רכש</span> לגבי מאווררים/ציוד משלים לבית.
+          </li>
+        </ul>
+      </section>
+
+      <section class="card col-12">
+        <h2>
+          <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <circle cx="12" cy="12" r="9" stroke="var(--mall-goth)" stroke-width="1.5"/>
+            <path d="M12 7v5l3 2" stroke="var(--mall-goth)" stroke-width="1.5"/>
+          </svg>
+          עדכונים בולטים
+        </h2>
+        <ul>
+          <li>
+            התקבל עדכון חיצוני על אפשרות לרישום בעירייה לגבי הפרגולה בעלות מוזלת דרך מהנדס בשם ניצן, אך לאחר בירור הוסבר שזה כנראה אינו מסלול נדרש במקרה הנוכחי.
+          </li>
+          <li>
+            נמסר כי קיימות המלצות קונקרטיות לחנויות צבע לבית, כולל עמנואל שלם והום סנטר.
+          </li>
+          <li>
+            הועברו המלצות על סוגי מאווררים וספקים, עם דגש על התאמה לתקרות גבוהות ועל מאווררים שקטים/מתקפלים.
+          </li>
+          <li>
+            שותף איש קשר של שכנה בנושא מדידת המחסן, כבסיס לפעולה בהמשך.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="footer-note">
+      הסיכום מבוסס על ההודעות המהותיות מהיום בלבד, תוך התעלמות מברכות, תגובות קצרות ורעש תפעולי.
+    </div>
+  </div>
+</body>
+</html>
